@@ -1,0 +1,152 @@
+/* TODO: ------------------------------------ contact ------------------------- */
+
+
+.contact{
+    margin: 10rem 0;
+    display: grid;
+    grid-template-columns: 35% 50%;
+    justify-content: space-between;
+}
+
+.contact h1{
+    font-size: 3.5rem;
+}
+
+/* TODO: ------------------------------------------- contact right --------------------- */
+.contact .contactRight{
+    padding: 5rem 2rem;
+    border: .2rem solid #3b4154;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.contact .contactRight p{
+    font-size: 1.3rem;
+    margin:1rem 0 3rem;
+}
+
+
+
+/* TODO: ------------------------------------------- contact ways --------------------- */
+
+.contactWays{
+    padding: 5rem 2rem;
+    border: .2rem solid #3b4154;
+    color: #000;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+
+
+
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.contactWays div{
+    display: flex;
+    column-gap: 1rem;
+}
+
+.contactWays div span:nth-child(1){
+   font-size: 1.8rem;
+}
+
+.contactWays div span:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+ }
+
+ .contactWays div span:nth-child(2) h3{
+   font-size: 1.6rem;
+ }
+
+ .contactWays div span:nth-child(2) p{
+    font-size: 1.3rem;
+  }
+
+  .contactWays div span:nth-child(2) h3{
+    font-size: 1.8rem;
+  }
+ 
+  .contactWays div span:nth-child(2) a{
+     font-size: 1.3rem;
+     font-weight: bold;
+     color: #000;
+   }
+
+/* TODO: --------------------------------------------- contact form ----------------------------------------- */
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+   
+}
+
+
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="number"],
+.contactForm textarea{
+    max-width: 100%;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm input[type="number"]{
+
+    height: 3.3rem;
+    padding: 0 .5rem;
+
+}
+
+.contactForm textarea{
+    padding: 1rem;
+    height: 12rem;
+
+}
+
+.contactForm input[type="submit"]{
+    height: 3.3rem;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+}
+
+
+
+
+/* ------------------------------------------ media query ----------------------------------------------- */
+@media (width < 991px){
+    .contact{
+        grid-template-columns: 40% 55%;
+    }
+    
+}
+
+@media (width < 767px){
+    .contact{
+        row-gap: 3rem;
+        grid-template-columns: 100%;
+    }
+    
+}

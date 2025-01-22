@@ -1,0 +1,137 @@
+.about {
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10rem;
+}
+
+.about h1 {
+  font-size: 3.5rem;
+}
+
+.about div .paraThree {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+/* TODO: ------------------------------------ Why Choose Us -------------------------- */
+
+.whyChoose {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+}
+
+.whyChoose div {
+  border: 0.1rem solid gray;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.whyChoose div h2 {
+  font-size: 1.8rem;
+}
+
+.whyChoose div p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.whyChoose div:hover {
+  background-color: #dfe6e9;
+}
+
+/* TODO: ----------------------------------------- Counter -------------------------------------------- */
+.counter {
+  padding: 3rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.counter li {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.counter li h1 {
+  font-size: 7rem;
+}
+
+.counter li h4 {
+  font-size: 2rem;
+}
+
+/* ------------------------------------------ media query --------------------------------------------- */
+@media (width < 1200px) {
+  .counter li h1 {
+    font-size: 5rem;
+  }
+
+  .counter li h4 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (width < 992px) {
+  .counter li h1 {
+    font-size: 4rem;
+  }
+
+  .counter li h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (width< 768px) {
+  .whyChoose {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .counter li h1 {
+    font-size: 3.5rem;
+  }
+
+  .counter li {
+    row-gap: 0.5rem;
+  }
+
+  .counter {
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width< 576px) {
+  .whyChoose {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+  }
+
+  .counter li h1 {
+    font-size: 3rem;
+  }
+
+  .counter li h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (width< 400px) {
+  .counter {
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

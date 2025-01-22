@@ -1,0 +1,86 @@
+.footer{
+    padding:  1% 10%;   
+}
+
+/* TODO: ------------------------------------ footer links ---------------------- */
+
+.footer .footerLinks{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+
+}
+
+.footer .footerLinks  div{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.footer .footerLinks  div:nth-child(1) ul li a{
+    color: #000;
+}
+
+.footer .footerLinks div h2{
+    font-size: 1.5rem;
+}
+
+.footer .footerLinks div ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.footer .footerLinks div ul li{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.footer .footerLinks div:nth-child(3) ul li{
+    display: flex;
+    column-gap: 1rem;
+}
+
+
+/* TODO: ------------------------------------ copy right ---------------------- */
+.footer hr{
+    margin: 2rem 0;
+}
+
+.footer .copyright{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+
+/* ---------------------------------- media query ------------------------------- */
+@media (width < 992px){
+    .footer .footerLinks{
+        grid-template-columns: 20% 40% 30%;
+    }
+}
+
+
+@media (width < 768px){
+    .footer .footerLinks{
+        row-gap: 2rem;
+        grid-template-columns: 30% 60%;
+    }
+
+
+    .footer .footerLinks  div{
+        padding: 1rem;
+    }
+}
+
+
+@media (width < 577px){
+    .footer .footerLinks{
+        row-gap: 2rem;
+        grid-template-columns: 100%;
+    }
+}

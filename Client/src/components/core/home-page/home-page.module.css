@@ -1,0 +1,183 @@
+/* TODO: ------------------------------------------ home --------------------------------------------------------- */
+.home {
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10rem;
+}
+
+.home h1 {
+  font-size: 3.5rem;
+  color: var(--main-color);
+}
+
+/* TODO: ----------------------------------------- text image ----------------------------------------------- */
+/* used in home section and about section */
+
+.textImage {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  justify-content: space-between;
+}
+
+/* reverse the second component */
+.reverse div:nth-child(1) {
+  order: 2;
+}
+
+.reverse div:nth-child(2) {
+  order: 1;
+}
+
+.textImage div:nth-child(1) h1 {
+  max-width: 80%;
+}
+
+.textImage div:nth-child(1) p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  max-width: 90%;
+  margin: 2.5rem 0 1rem;
+  color: var(--main-color);
+}
+
+.textImage div:nth-child(2) {
+  height: 35rem;
+}
+
+.textImage div:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+}
+
+/* TODO: ------------------------------------------ Departments ---------------------------------------------------- */
+.departmentCard {
+  position: relative;
+  margin: 0 0.5rem;
+  margin-top: 5rem;
+}
+
+.departmentCard h2 {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+
+  background-color: #ecf0f1;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.departmentCard img {
+  width: 100%;
+  height: 30rem;
+}
+
+/* TODO: ------------------------------------ Book Appointment ------------------------- */
+.bookAppointment {
+  border: 0.2rem solid var(--main-color);
+
+  display: grid;
+  grid-template-columns: 50% 35%;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 2rem 5rem;
+
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.bookAppointment div:nth-child(1) span {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.bookAppointment div:nth-child(2) img {
+  width: 100%;
+  height: 28rem;
+}
+
+/* ----------------------------------------------- media query -------------------------------------- */
+@media (width < 992px) {
+  .home h1 {
+    font-size: 2.8rem;
+  }
+
+  .textImage {
+    align-items: center;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .textImage div:nth-child(2) {
+    height: 30rem;
+  }
+
+  .reverse div:nth-child(2) img {
+    max-width: 90%;
+  }
+
+  .bookAppointment {
+    grid-template-columns: 45% 45%;
+    padding: 2rem;
+  }
+}
+
+@media (width < 767px) {
+  .textImage {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .textImage div:nth-child(1) h1 {
+    max-width: 100%;
+  }
+
+  .textImage div:nth-child(1) p {
+    max-width: 100%;
+  }
+
+  .reverse div:nth-child(2) img {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .reverse div:nth-child(1) {
+    order: 1;
+  }
+
+  .reverse div:nth-child(2) {
+    order: 2;
+  }
+
+  .bookAppointment h1 {
+    font-size: 2.3rem;
+  }
+
+  .bookAppointment div:nth-child(2) img {
+    height: 20rem;
+  }
+}
+
+@media (width < 767px) {
+  .bookAppointment {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  .bookAppointment div:nth-child(2) img {
+    margin-top: 3rem;
+    height: 25rem;
+  }
+}

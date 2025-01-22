@@ -1,0 +1,82 @@
+.errorPage,
+.offlinePage {
+  margin: 10rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+/* --------------------------------- page not found --------------------------------------------- */
+.errorPage h1 {
+  font-size: 20rem;
+}
+
+.errorPage h3,
+.errorPage p {
+  text-align: center;
+}
+
+.errorPage h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.errorPage p {
+  font-size: 1.3rem;
+  max-width: 50%;
+}
+
+/* ------------------------------------------------- offline ---------------------------------------- */
+
+.offlinePage {
+  padding: 0 10%;
+}
+.offlinePage img {
+  width: 30%;
+  height: auto;
+}
+
+.offlinePage h2 {
+  text-align: center;
+}
+
+/* --------------------------------- page not found --------------------------------------------- */
+
+@media (width < 1200px){
+    .offlinePage img {
+        width: 50%;
+        height: auto;
+      }
+}
+
+@media (width < 992px){
+    .offlinePage img {
+        width: 60%;
+        height: auto;
+      }
+}
+
+@media (width < 768px){
+    .offlinePage img {
+        width: 70%;
+        height: auto;
+      }
+}
+
+
+@media (width < 576px) {
+
+    .offlinePage img {
+        width: 80%;
+        height: auto;
+      }
+  .errorPage h1 {
+    font-size: 15rem;
+  }
+
+  .errorPage p {
+    max-width: 90%;
+  }
+}
