@@ -21,7 +21,7 @@ const AppointStatus = () => {
     try {
       const response = await apiConnector(
         "GET",
-        `http://localhost:4000/api/v1/admin/appoint-user/${params.id}`
+        `https://hospital-mangement-system-app.onrender.com/api/v1/admin/appoint-user/${params.id}`
       );
 
       if (!response.data.success) {
@@ -63,7 +63,7 @@ const AppointStatus = () => {
 
       const response = await apiConnector(
         "PUT",
-        `http://localhost:4000/api/v1/admin/update-status/${params.id}`,
+        `https://hospital-mangement-system-app.onrender.com/api/v1/admin/update-status/${params.id}`,
         {
           status: userAppointUpdate.status,
         },

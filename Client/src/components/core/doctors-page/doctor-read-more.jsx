@@ -16,7 +16,7 @@ const DoctorReadMore = () => {
       loadData(true);
       const response = await apiConnector(
         "GET",
-        `http://localhost:4000/api/v1/admin/doctors/read-more/${params.id}`
+        `https://hospital-mangement-system-app.onrender.com/api/v1/admin/doctors/read-more/${params.id}`
       );
 
       if (!response.data.success) {
