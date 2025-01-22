@@ -25,7 +25,8 @@ cloudinaryConnect()
 // TODO: tackle cors
 
 const corsOption = {
-    origin: "http://localhost:5173",
+    // origin: "http://localhost:5173",
+    origin: "https://hospital-mangement-system-app.onrender.com",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
     allowedHeaders: ['Authorization', 'Content-Type'],
