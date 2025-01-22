@@ -127,7 +127,7 @@ const UpdateDoctorProfile = () => {
             type="text"
             name="name"
             placeholder="Enter Full Name"
-            required
+            // required
             disabled={true}
             value={updateFormData.name}
           />
@@ -138,7 +138,7 @@ const UpdateDoctorProfile = () => {
             type="email"
             name="email"
             placeholder="Enter Email Address"
-            required
+            // required
             disabled={true}
             value={updateFormData.email}
           />
@@ -149,7 +149,7 @@ const UpdateDoctorProfile = () => {
             type="number"
             name="phone"
             placeholder="Enter Contact Number"
-            required
+            // required
             onChange={(e) => handleInputForm(e)}
             value={updateFormData.phone}
           />
@@ -159,7 +159,7 @@ const UpdateDoctorProfile = () => {
           <label htmlFor="">Gender</label>
           <select
             name="gender"
-            required
+            // required
             disabled={true}
             value={updateFormData.gender}
           >
@@ -179,7 +179,7 @@ const UpdateDoctorProfile = () => {
           {/* department */}
           <select
             name="department"
-            required
+            // required
             onChange={(e) => handleInputForm(e)}
             value={updateFormData.department}
           >
@@ -199,7 +199,7 @@ const UpdateDoctorProfile = () => {
           {/* degree */}
           <select
             name="degree"
-            required
+            // required
             onChange={(e) => handleInputForm(e)}
             value={updateFormData.degree}
           >
@@ -218,7 +218,7 @@ const UpdateDoctorProfile = () => {
           {/* experience */}
           <select
             name="experience"
-            required
+            // required
             onChange={(e) => handleInputForm(e)}
             value={updateFormData.experience}
           >
@@ -238,7 +238,7 @@ const UpdateDoctorProfile = () => {
           <textarea
             name="address"
             id=""
-            required
+            // required
             onChange={(e) => handleInputForm(e)}
             value={updateFormData.address}
             placeholder="Enter Address"
@@ -251,7 +251,7 @@ const UpdateDoctorProfile = () => {
           <textarea
             name="about"
             id=""
-            required
+            // required
             onChange={(e) => handleInputForm(e)}
             value={updateFormData.about}
             placeholder="About Doctors..."
