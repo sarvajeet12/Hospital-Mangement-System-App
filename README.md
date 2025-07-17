@@ -8,7 +8,6 @@
 
 ## 🌐 Deployment : https://hospital-mangement-system-app.onrender.com/
 
----
 
 ## 📖 Definition
 
