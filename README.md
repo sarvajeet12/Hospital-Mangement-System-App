@@ -6,6 +6,10 @@
 
 ---
 
+🌐 Deployment : https://hospital-mangement-system-app.onrender.com/
+
+---
+
 ## 📖 Definition
 
 A **Hospital Management System** is a comprehensive software platform that manages all aspects of hospital operations, including patient records, doctor profiles, appointments, messaging, and administrative tasks. This project aims to automate and simplify these processes, improving efficiency, accuracy, and user satisfaction.
