@@ -3,7 +3,7 @@ const Cloudinary = require('cloudinary').v2
 
 const uploadToCloudinary = async (file, folder, height, quality) => {
 
-    const options = { folde };
+    const options = { folder };
 
     if (height) {
         options.height = height;
