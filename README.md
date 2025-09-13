@@ -1,4 +1,4 @@
-# 🏥 Hospital Management System (HMS) - MERN Stack
+# 🏥 Hospital Management System (HMS) - MERN Stac
 
 ## 🚀 Project Overview
 
