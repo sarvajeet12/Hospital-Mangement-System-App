@@ -5,7 +5,7 @@ const BASE_URL = "https://hospital-mangement-system-app.onrender.com/api/v1";
 
 
 
-export const aut = {
+export const auth = {
     SIGNUP_API: BASE_URL + "/user/register",
     LOGIN_API: BASE_URL + "/user/login",
     USER_API: BASE_URL + "/user/user-details",
