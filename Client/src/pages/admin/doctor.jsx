@@ -6,7 +6,7 @@ const Doctor = () => {
   return (
     <div className={Style.doctor}>
       <h1>Doctor List</h1>
-      <DoctorList />
+      <DoctorLis />
     </div>
   );
 };
