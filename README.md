@@ -1,6 +1,6 @@
 # 🏥 Hospital Management System (HMS) - MERN Stack
 
-## 🚀 Project Overview
+## 🚀 Project Overvie
 
 **Hospital Management System (HMS)** is a full-stack web application designed to streamline and digitize hospital operations. Built with the powerful MERN stack (MongoDB, Express.js, React.js, Node.js), HMS provides a seamless experience for patients, doctors, and administrators. The system enables appointment scheduling, doctor management, secure authentication, messaging, and more—all in a modern, responsive interface.
 
